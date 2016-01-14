@@ -1,0 +1,80 @@
+body {
+	text-align: center;
+	background-color: #000;
+	background: url("../images/page_background.jpg");
+  	background-size: contain;
+  	background-attachment: fixed;
+  	color: #ffffff;
+}
+
+h1, h2 {
+	font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
+}
+
+p, ul {
+	font-family: 'Tinos', Garamond, Palatino, 'Times New Roman', Times, serif;
+	line-height: 1.5em;
+}
+
+h1 {
+	text-transform: uppercase;
+	color: #dddddd;
+}
+
+p {
+	text-align: left;
+	color: #cccccc;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: #79f;
+}
+
+#slogan {
+	font-size: 24px;
+	font-style: italic;
+	text-align: center;
+}
+
+#footer {
+	font-size: 10px;
+	text-align: center;
+}
+
+.stats {
+	font-weight: bold;
+	font-size: 11px;
+}
+
+.summary {
+	font-style: italic;
+	font-size: 14px;
+}
+
+.writeup {
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.contact {
+	text-align: center;
+}
+
+.movie {
+	margin: 20px;
+	padding: 20px;
+	border-width: 1px;
+	border-color: #ffffff;
+	border-style: solid;
+	background: rgba(100,100,100,.5);
+}
+
+.poster {
+	width: 120px;
+}
+
