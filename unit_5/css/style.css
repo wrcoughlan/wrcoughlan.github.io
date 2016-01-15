@@ -1,5 +1,4 @@
 body {
-	text-align: center;
 	background-color: #000;
 	background: url("../images/page_background.jpg");
   	background-size: contain;
@@ -9,6 +8,7 @@ body {
 
 h1, h2 {
 	font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
+	text-align: center;
 }
 
 p, ul {
@@ -22,12 +22,12 @@ h1 {
 }
 
 p {
-	text-align: left;
 	color: #cccccc;
 }
 
 ul {
 	list-style-type: none;
+	text-align: center;
 }
 
 a {
@@ -35,14 +35,69 @@ a {
 	color: #79f;
 }
 
-#slogan {
-	font-size: 24px;
-	font-style: italic;
+img {
+	width: inherit;
+}
+
+header {
+	text-align: center;
+	background-color: #FFED74;
+    border: 1px black solid;
+    padding: 20px;
+
+}
+
+nav {
+	background-color: #E8C66A;
+    border: 1px black solid;
+    padding: 20px;
+
+}
+
+aside {
+	background-color: #FFC675;
+    border: 1px black solid;
+    padding: 20px;
+
+}
+
+article {
+	background-color: #E89C6C;
+    border: 1px black solid;
+    padding: 20px;
+
+}
+
+footer {
+	font-size: 10px;
+	text-align: center;
+	background-color: #FF957E;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+div {
+	background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
+
+}
+
+section {
+	background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 20px;
+
+}
+
+
+#promo {
 	text-align: center;
 }
 
-#footer {
-	font-size: 10px;
+#slogan {
+	font-size: 24px;
+	font-style: italic;
 	text-align: center;
 }
 
@@ -78,3 +133,17 @@ a {
 	width: 120px;
 }
 
+.awards {
+	color: #ffffcc;
+	font-size: 12px;
+	line-height: 1em;
+}
+
+.award {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.festival {
+	font-style: italic;
+}
