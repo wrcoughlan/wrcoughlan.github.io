@@ -1,0 +1,203 @@
+body {
+	background-color: #000;
+	background: url("../images/page_background.jpg");
+  	background-size: contain;
+  	background-attachment: fixed;
+  	color: #000000;
+}
+
+h1, h2 {
+	font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
+	text-align: center;
+}
+
+p, ul {
+	font-family: 'Tinos', Garamond, Palatino, 'Times New Roman', Times, serif;
+	line-height: 1.5em;
+}
+
+h1 {
+	text-transform: uppercase;
+	color: #000000;
+}
+
+p {
+	color: #000000;
+}
+
+ul {
+	list-style-type: none;
+	text-align: center;
+	padding: 0;
+	line-height: 1em;
+}
+
+li {
+	margin-top: 0em;
+	margin-bottom: 1em;
+}
+
+a {
+	text-decoration: none;
+	color: #000099;
+}
+
+img {
+	width: inherit;
+}
+
+header {
+	text-align: center;
+	background-color: #FFED74;
+    border: 1px black solid;
+    padding: 20px;
+
+}
+
+nav {
+	background-color: #E8C66A;
+    border: 1px black solid;
+    padding: 20px;
+
+}
+
+aside {
+	background-color: #E55B88;
+    border: 1px black solid;
+    padding: 20px;
+    float: right;
+    width: 25%;
+    text-align: center;
+
+}
+
+article {
+	background-color: pink;
+    border: 1px black solid;
+    padding: 20px;
+    float: left;
+    width: 64%;
+
+}
+
+footer {
+	font-size: 10px;
+	text-align: center;
+	background-color: #FF957E;
+    border: 1px black solid;
+    padding: 20px;
+}
+
+section {
+	background-color: #FFB7CF;
+    border: 1px black solid;
+    padding: 20px;
+
+}
+
+#promo {
+	text-align: center;
+}
+
+#slogan {
+	font-size: 24px;
+	font-style: italic;
+	text-align: center;
+}
+
+#festivals {
+	background-color: #FFB7CF;
+	border: 1px black solid;
+	padding: 20px;
+	text-align: center;
+}
+
+#festivals_left {
+	background-color: #E582A2;
+	border: 1px black solid;
+	padding: 20px;
+	float: left;
+	width: 45%;
+}
+
+#festivals_right {
+	background-color: #E55B88;
+	border: 1px black solid;
+	padding: 20px;
+	float: right;
+	width: 45%;
+}
+
+.wrapper {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.stats {
+	font-weight: bold;
+	font-size: 11px;
+	margin-top: 0px;
+}
+
+.summary {
+	font-style: italic;
+	font-size: 14px;
+}
+
+.writeup {
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.contact {
+	text-align: center;
+}
+
+.movie {
+	margin: 20px;
+	padding: 20px;
+	border-width: 1px;
+	border-color: #ffffff;
+	border-style: solid;
+	background: rgba(100,100,100,.5);
+}
+
+.movie:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.poster {
+	width: 150px;
+	float: left;
+	margin: 0 15px 15px 0;
+}
+
+.awards {
+	color: #ffffcc;
+	font-size: 12px;
+	background-color: violet;
+}
+
+.award {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.festival {
+	font-style: italic;
+}
