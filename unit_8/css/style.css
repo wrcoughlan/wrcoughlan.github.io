@@ -1,24 +1,33 @@
 body {
 	background-color: #000;
 	background: url("../images/page_background.jpg");
-  	background-size: contain;
-  	background-attachment: fixed;
-  	color: #000000;
+	background-size: contain;
+	background-attachment: fixed;
+	color: #000033;
+	font-family: 'Tinos', Garamond, 'Adobe Garamond Pro', Georgia, 'Times New Roman', Times, serif;
+	font-size: 16px;
 }
 
 h1, h2 {
-	font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
+	font-family: 'Poiret One', Helvetica, Arial, sans-serif;
 	text-align: center;
 }
 
-p, ul {
-	font-family: 'Tinos', Garamond, Palatino, 'Times New Roman', Times, serif;
+p {
 	line-height: 1.5em;
 }
 
 h1 {
 	text-transform: uppercase;
-	color: #000000;
+	font-size: 2em;
+	margin-top: .4em;
+	margin-bottom: .4em;
+}
+
+h2 {
+	letter-spacing: .07em;
+	margin-top: .4em;
+
 }
 
 p {
@@ -39,7 +48,11 @@ li {
 
 a {
 	text-decoration: none;
-	color: #000099;
+	color: #888800;
+}
+
+a:hover {
+	color: #AAAA22;
 }
 
 img {
@@ -47,138 +60,183 @@ img {
 }
 
 header {
-	text-align: center;
-	background-color: #FFED74;
-    border: 1px black solid;
-    padding: 20px;
+	text-align: left;
+	font-family: 'Poiret One', Helvetica, Arial, sans-serif;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	border-radius: 8px;
+	color: #000000;
+	background-color: rgba(255,255,255,.8);
+	border: 0;
+	padding: 5px;
 
 }
 
-nav {
-	background-color: #E8C66A;
-    border: 1px black solid;
-    padding: 20px;
-
+header img {
+margin: 4px 0 0 4px;
 }
 
 aside {
-	background-color: #E55B88;
-    border: 1px black solid;
-    padding: 20px;
-    float: right;
-    width: 25%;
-    text-align: center;
+		border: 0;
+		padding: 2%;
+		float: right;
+		width: 24%;
+		text-align: center;
 
 }
 
 article {
-	background-color: pink;
-    border: 1px black solid;
-    padding: 20px;
-    float: left;
-    width: 64%;
+		border: 0;
+		padding: 2%;
+		float: left;
+		width: 68%;
 
 }
 
 footer {
-	font-size: 10px;
+	font-size: .7em;
 	text-align: center;
-	background-color: #FF957E;
-    border: 1px black solid;
-    padding: 20px;
+	background: rgba(255,255,255,.8);
+	border-radius: 8px;
+	padding: 10px;
 }
 
 section {
-	background-color: #FFB7CF;
-    border: 1px black solid;
-    padding: 20px;
+		border: 0;
+		padding: 10px;
 
 }
+
+
+/* ID selectors following */
 
 #promo {
 	text-align: center;
+	color: #ffffff;
 }
 
 #slogan {
-	font-size: 24px;
-	font-style: italic;
+	font-size: 1.5em;
 	text-align: center;
+	letter-spacing: 0.05em;
+
 }
 
 #festivals {
-	background-color: #FFB7CF;
-	border: 1px black solid;
-	padding: 20px;
+	border: 0;
+	color: #ffffff;
+	padding: 10px;
 	text-align: center;
+	background-color: rgba(255,255,255,.8);
+	background: url("../images/laurels_white.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+
+}
+
+#festivals a {
+	color: #FFFFCC;
+}
+
+#festivals a:hover {
+	color: #aaaa66;
+}
+
+
+#festivals ul, li {
+	padding: 0;
+	margin: 6px 0 6px;
 }
 
 #festivals_left {
-	background-color: #E582A2;
-	border: 1px black solid;
-	padding: 20px;
+	border: 0;
+	padding: 0 2% 0;
 	float: left;
-	width: 45%;
+	width: 46%;
 }
 
 #festivals_right {
-	background-color: #E55B88;
-	border: 1px black solid;
-	padding: 20px;
+	border: 0;
+	padding: 0 2% 0;
 	float: right;
-	width: 45%;
+	width: 46%;
+}
+
+#movie_roll ul, li {
+	padding: 0;
+	margin: 6px 0 6px;
+}
+
+#movie_roll {
+	border: 0;
+	padding: 0;
+}
+
+
+/* Class selectors following */
+
+.bg_info {
+	color: #ffffff;
 }
 
 .wrapper {
-	width: 960px;
+	width: 90%;
+	max-width: 960px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 .clearfix:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
+		visibility: hidden;
+		display: block;
+		font-size: 0;
+		content: " ";
+		clear: both;
+		height: 0;
 }
 
 .stats {
 	font-weight: bold;
-	font-size: 11px;
+	font-size: .9em;
 	margin-top: 0px;
 }
 
 .summary {
 	font-style: italic;
-	font-size: 14px;
+	font-size: 1em;
 }
 
 .writeup {
 	font-weight: normal;
-	font-size: 12px;
+	font-size: .9em;
 }
 
 .contact {
 	text-align: center;
+	background: rgba(255,255,255,.8);
+	border-radius: 8px;
+
 }
 
 .movie {
-	margin: 20px;
-	padding: 20px;
+	margin: 10px 0;
+	padding: 5px;
 	border-width: 1px;
-	border-color: #ffffff;
+	border-color: rgba(255,255,255,1);
 	border-style: solid;
-	background: rgba(100,100,100,.5);
+	background: rgba(255,255,255,.8);
+	border-radius: 8px;
 }
 
 .movie:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
+		visibility: hidden;
+		display: block;
+		font-size: 0;
+		content: " ";
+		clear: both;
+		height: 0;
 }
 
 .poster {
@@ -188,9 +246,12 @@ section {
 }
 
 .awards {
-	color: #ffffcc;
-	font-size: 12px;
-	background-color: violet;
+	color: #888800;
+	font-size: .9em;
+	background: url("../images/laurels.png");
+	background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
 }
 
 .award {
@@ -201,3 +262,182 @@ section {
 .festival {
 	font-style: italic;
 }
+
+.menu {
+	float: right;
+	position: static;
+	margin: 0;
+	padding: 0.9em 0 0 0;
+}
+
+.menu a {
+	color: #000000;
+	padding: 5px 10px;
+	text-decoration: none;
+}
+
+.menu a:hover { 
+	background-color: rgba(0,0,0,.2);
+	color: #888800;
+}
+
+.menu > ul {
+	transition: max-height 0.25s linear;
+}
+
+.menu ul {
+	padding: 0;
+	margin: 0;
+	text-align: right;
+}
+
+.menu li {
+	transition: visibility .25s linear;
+	display: inline-block;
+	position: relative;
+}
+
+
+/* Media queries following, including "hamburger menu" CSS */
+
+@media screen and (min-width: 651px) {
+
+	.menu li ul {
+		display: none;
+		position: absolute;
+		top: 100%;
+		margin-top: 1px;
+		left: -1px;
+		right: -1px;
+	}
+
+	.menu li:hover ul {
+		display: block;
+	}
+
+	.menu li li {
+		margin: -1px 0 0 0;
+		box-sizing: border-box;
+		width: 100%;
+	}
+}
+
+
+@media screen and (min-width: 900px) {
+
+	.menu {
+		font-size: 1.2em;
+		padding: 0.7em 0 0 0;
+	}
+
+}
+
+@media screen and (max-width: 650px) {
+
+	#festivals, .bg_info {
+		display: none;
+	}
+
+	.wrapper {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.awards {
+		display: none;
+	}
+
+	article {
+		border: 0;
+		padding: 2%;
+		float: left;
+		width: 96%;
+
+	}
+
+	.menu > ul {
+		max-height: 0;
+		overflow: hidden;
+		margin: 1em 3.5em 0 1em;
+		background-color: rgba(0,0,0,.2);
+	}
+
+	.menu li {
+		visibility: hidden;
+		display: block;
+		padding: 0.5em 0.6em;
+		border: none;
+	}
+
+	.menu li ul {
+		margin-top: 0.5em;
+		border-left: 1px solid #000;
+	}
+	
+	.menu .navbar-handle {
+		display: block;
+	}
+
+	#navbar-checkbox:checked + .menu ul {
+		max-height: 300px;
+	}
+
+	#navbar-checkbox:checked + .menu li {
+		visibility: visible;
+	}
+
+	#navbar-checkbox:checked + .menu .navbar-handle,
+	#navbar-checkbox:checked + .menu .navbar-handle:after,
+	#navbar-checkbox:checked + .menu .navbar-handle:before {
+		border-color: #aaa;
+	}
+}
+
+.navbar-checkbox {
+	display: none;
+}
+
+.navbar-handle {
+	display: none;
+	cursor: pointer;
+	position: relative;
+	font-size: 45px;
+	padding: .5em 0;
+	height: 0;
+	width: 1.66666667em;
+	border-top: 0.13333333em solid;
+}
+
+.navbar-handle:before,
+.navbar-handle:after {
+	position: absolute;
+	left: 0;
+	right: 0;
+	content: ' ';
+	border-top: 0.13333333em solid;
+}
+
+.navbar-handle:before {
+	top: 0.37777778em;
+}
+
+.navbar-handle:after {
+	top: 0.88888889em;
+}
+
+.menu {
+	position: relative;
+	top: -.4em;
+	left: 0;
+	right: 0;
+}
+
+.menu .navbar-handle {
+	position: absolute;
+	font-size: 1.2em;
+	top: 0.7em;
+	right: 12px;
+	z-index: 10;
+}
+
