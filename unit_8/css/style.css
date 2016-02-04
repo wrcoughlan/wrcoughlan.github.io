@@ -17,6 +17,8 @@ h1, h2 {
 
 p {
 	line-height: 1.5em;
+	font-size: 1em;
+	color: #000000;
 }
 
 h1 {
@@ -29,11 +31,8 @@ h1 {
 h2 {
 	letter-spacing: .07em;
 	margin-top: .4em;
+	font-size: 1.5em;
 
-}
-
-p {
-	color: #000000;
 }
 
 ul {
@@ -41,6 +40,7 @@ ul {
 	text-align: center;
 	padding: 0;
 	line-height: 1em;
+	font-size: 1em;
 }
 
 li {

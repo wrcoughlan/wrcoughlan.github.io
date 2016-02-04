@@ -7,6 +7,7 @@ body {
   	background-size: contain;
   	background-attachment: fixed;
   	color: #ffffff;
+  	font-size: 16px;
 }
 
 h1, h2 {
@@ -16,11 +17,17 @@ h1, h2 {
 p, ul {
 	font-family: 'Tinos', Garamond, Palatino, 'Times New Roman', Times, serif;
 	line-height: 1.5em;
+	font-size: 1em;
 }
 
 h1 {
 	text-transform: uppercase;
 	color: #dddddd;
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
 }
 
 p {
