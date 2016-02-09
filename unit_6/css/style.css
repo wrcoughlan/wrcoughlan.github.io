@@ -1,5 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Tinos:400,400italic,700,700italic|Josefin+Sans:600,600italic);
 
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
 body {
 	background-color: #000;
 	background: url("../images/page_background.jpg");
@@ -9,9 +15,11 @@ body {
   	font-size: 16px;
 }
 
-h1, h2 {
+h1, h2, h3, h4, h5, h6 {
 	font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
+	font-weight: 600;
 	text-align: center;
+	margin: 8px;
 }
 
 p, ul {
@@ -58,50 +66,59 @@ img {
 header {
 	text-align: center;
 	background-color: #FFED74;
-    border: 1px black solid;
-    padding: 20px;
+	border: 1px black solid;
+	padding: 20px;
 
 }
 
 nav {
 	background-color: #E8C66A;
-    border: 1px black solid;
-    padding: 20px;
-
+	border: 1px black solid;
+	padding: 20px;
 }
 
-aside {
-	background-color: #E55B88;
-    border: 1px black solid;
-    padding: 20px;
-    float: right;
-    width: 25%;
-    text-align: center;
-
+nav a {
+	font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+	margin: 0 0.5em;
+	color: #900;
 }
 
 article {
-	background-color: pink;
-    border: 1px black solid;
-    padding: 20px;
-    float: left;
-    width: 64%;
+	float: left;
+	width: 70%;
+}
 
+aside {
+	float: right;
+	width: 30%;
 }
 
 footer {
-	font-size: 10px;
-	text-align: center;
+	clear: both;
+	font-size: 0.7em;
+	text-align: left;
 	background-color: #FF957E;
-    border: 1px black solid;
-    padding: 20px;
+	border: 1px black solid;
+	padding: 20px;
+	margin-top: 8px;
+}
+
+footer p {
+	float: right;
+}
+
+footer a {
+	font-size: 1.3em;
+	margin: 0 0.5em;
+	color: #900;
 }
 
 section {
 	background-color: #FFB7CF;
-    border: 1px black solid;
-    padding: 20px;
-
+	border: 1px black solid;
+	padding: 20px;
+	margin: 10px 0;
 }
 
 #promo {
@@ -126,7 +143,7 @@ section {
 	border: 1px black solid;
 	padding: 20px;
 	float: left;
-	width: 45%;
+	width: 50%;
 }
 
 #festivals_right {
@@ -134,22 +151,24 @@ section {
 	border: 1px black solid;
 	padding: 20px;
 	float: right;
-	width: 45%;
+	width: 50%;
 }
 
 .wrapper {
 	width: 960px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 8px;
+	margin-bottom: 8px;
 }
 
 .clearfix:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
 }
 
 .stats {
@@ -182,12 +201,18 @@ section {
 }
 
 .movie:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.description {
+	background-color: pink;
+	border: 1px black solid;
+	padding: 20px;
 }
 
 .poster {
@@ -197,9 +222,12 @@ section {
 }
 
 .awards {
+	border: 1px black solid;
+	padding: 20px;
 	color: #ffffcc;
 	font-size: 12px;
 	background-color: violet;
+	text-align: center;
 }
 
 .award {

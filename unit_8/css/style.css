@@ -1,5 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Tinos:400,400italic,700,700italic|Poiret+One);
 
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
 body {
 	background-color: #000;
 	background: url("../images/page_background.jpg");
@@ -8,9 +14,11 @@ body {
 	color: #000033;
 	font-family: 'Tinos', Garamond, 'Adobe Garamond Pro', Georgia, 'Times New Roman', Times, serif;
 	font-size: 16px;
+	margin-left: 8px;
+	margin-right: 8px;
 }
 
-h1, h2 {
+h1, h2, h3, h4, h5, h6 {
 	font-family: 'Poiret One', Helvetica, Arial, sans-serif;
 	text-align: center;
 }
@@ -32,7 +40,6 @@ h2 {
 	letter-spacing: .07em;
 	margin-top: .4em;
 	font-size: 1.5em;
-
 }
 
 ul {
@@ -72,42 +79,49 @@ header {
 	background-color: rgba(255,255,255,.8);
 	border: 0;
 	padding: 5px;
-
+	margin: 10px 0;
 }
 
 header img {
-margin: 4px 0 0 4px;
-}
-
-aside {
-		border: 0;
-		padding: 2%;
-		float: right;
-		width: 24%;
-		text-align: center;
-
+	margin: 4px 0 0 4px;
 }
 
 article {
-		border: 0;
-		padding: 2%;
-		float: left;
-		width: 68%;
+	border: 0;
+	padding: 2%;
+	float: left;
+	width: 70%;
+}
 
+aside {
+	border: 0;
+	padding: 2%;
+	float: right;
+	width: 30%;
 }
 
 footer {
+	clear: both;
 	font-size: .7em;
-	text-align: center;
+	text-align: left;
 	background: rgba(255,255,255,.8);
 	border-radius: 8px;
 	padding: 10px;
+	margin-top: 8px;
+}
+
+footer p {
+	float: right;
+}
+
+footer a {
+	font-size: 1.3em;
+	margin: 0 0.5em;
 }
 
 section {
-		border: 0;
-		padding: 10px;
-
+	border: 0;
+	padding: 10px;
 }
 
 
@@ -155,15 +169,17 @@ section {
 #festivals_left {
 	border: 0;
 	padding: 0 2% 0;
+	margin-left: 10%;
 	float: left;
-	width: 46%;
+	width: 40%;
 }
 
 #festivals_right {
 	border: 0;
 	padding: 0 2% 0;
+	margin-right: 10%;
 	float: right;
-	width: 46%;
+	width: 40%;
 }
 
 #movie_roll ul, li {
@@ -188,6 +204,8 @@ section {
 	max-width: 960px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 8px;
+	margin-bottom: 8px;
 }
 
 .clearfix:after {
@@ -219,6 +237,7 @@ section {
 	text-align: center;
 	background: rgba(255,255,255,.8);
 	border-radius: 8px;
+	margin-bottom: 8px;
 
 }
 
@@ -241,6 +260,10 @@ section {
 		height: 0;
 }
 
+.description {
+	
+}
+
 .poster {
 	width: 150px;
 	float: left;
@@ -252,8 +275,9 @@ section {
 	font-size: .9em;
 	background: url("../images/laurels.png");
 	background-position: center;
-		background-size: contain;
-		background-repeat: no-repeat;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-align: center;
 }
 
 .award {
@@ -362,7 +386,7 @@ section {
 		max-height: 0;
 		overflow: hidden;
 		margin: 1em 3.5em 0 1em;
-		background-color: rgba(0,0,0,.2);
+		background-color: rgba(150,150,150,.7);
 	}
 
 	.menu li {
@@ -370,6 +394,10 @@ section {
 		display: block;
 		padding: 0.5em 0.6em;
 		border: none;
+	}
+
+	.menu a:hover {
+		color: #FFFF88;
 	}
 
 	.menu li ul {
