@@ -77,11 +77,23 @@ nav {
 	padding: 20px;
 }
 
-nav a {
+nav a:link {
 	font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
 	font-size: 1.5em;
 	margin: 0 0.5em;
 	color: #900;
+}
+
+nav a:visited {
+	color: #900;
+}
+
+nav a:hover {
+	color: #C00;
+}
+
+nav a:active {
+	color: #C00;
 }
 
 article {
@@ -121,6 +133,14 @@ section {
 	margin: 10px 0;
 }
 
+main > section:first-child {
+	margin-top: 2em;
+}
+
+main > section:last-child {
+	margin-bottom: 2em;
+}
+
 #promo {
 	text-align: center;
 }
@@ -155,7 +175,8 @@ section {
 }
 
 .wrapper {
-	width: 960px;
+	width: 90%;
+	max-width: 960px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 8px;
@@ -200,6 +221,23 @@ section {
 	background: rgba(100,100,100,.5);
 }
 
+/* Simplifying things with a few dependent-child definitions */
+
+.movie > article {
+	background-color: pink;
+	border: 1px black solid;
+	padding: 20px;
+}
+
+.movie > aside {
+	border: 1px black solid;
+	padding: 20px;
+	color: #ffffcc;
+	font-size: 12px;
+	background-color: violet;
+	text-align: center;
+}
+
 .movie:after {
 	visibility: hidden;
 	display: block;
@@ -209,25 +247,10 @@ section {
 	height: 0;
 }
 
-.description {
-	background-color: pink;
-	border: 1px black solid;
-	padding: 20px;
-}
-
 .poster {
 	width: 150px;
 	float: left;
 	margin: 0 15px 15px 0;
-}
-
-.awards {
-	border: 1px black solid;
-	padding: 20px;
-	color: #ffffcc;
-	font-size: 12px;
-	background-color: violet;
-	text-align: center;
 }
 
 .award {

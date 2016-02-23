@@ -29,6 +29,14 @@ p {
 	color: #000000;
 }
 
+hr {
+	border: none;
+	background-color:rgba(255,255,255,.5);
+	height: 2px;
+	width: 50%;
+	margin: 0.8em auto;
+}
+
 h1 {
 	text-transform: uppercase;
 	font-size: 2em;
@@ -55,12 +63,23 @@ li {
 	margin-bottom: 1em;
 }
 
-a {
+a:link {
+	text-decoration: none;
+	color: #888800;
+}
+
+a:visited {
 	text-decoration: none;
 	color: #888800;
 }
 
 a:hover {
+	text-decoration: none;
+	color: #AAAA22;
+}
+
+a:active {
+	text-decoration: none;
 	color: #AAAA22;
 }
 
@@ -124,6 +143,24 @@ section {
 	padding: 10px;
 }
 
+main > section {
+	border: 0;
+	padding: 0;
+}
+
+main > section ul, li {
+	padding: 0;
+	margin: 6px 0 6px;
+}
+
+main > section:first-child {
+	margin-top: 2em;
+}
+
+main > section:last-child {
+	margin-bottom: 2em;
+}
+
 
 /* ID selectors following */
 
@@ -152,7 +189,11 @@ section {
 
 }
 
-#festivals a {
+#festivals a:link {
+	color: #FFFFCC;
+}
+
+#festivals a:visited {
 	color: #FFFFCC;
 }
 
@@ -160,6 +201,9 @@ section {
 	color: #aaaa66;
 }
 
+#festivals a:active {
+	color: #aaaa66;
+}
 
 #festivals ul, li {
 	padding: 0;
@@ -180,16 +224,6 @@ section {
 	margin-right: 10%;
 	float: right;
 	width: 40%;
-}
-
-#movie_roll ul, li {
-	padding: 0;
-	margin: 6px 0 6px;
-}
-
-#movie_roll {
-	border: 0;
-	padding: 0;
 }
 
 
@@ -251,6 +285,22 @@ section {
 	border-radius: 8px;
 }
 
+/* Simplifying things with a few dependent-child definitions */
+
+.movie > article {
+	
+}
+
+.movie > aside {
+	color: #888800;
+	font-size: .9em;
+	background: url("../images/laurels.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
 .movie:after {
 		visibility: hidden;
 		display: block;
@@ -260,24 +310,10 @@ section {
 		height: 0;
 }
 
-.description {
-	
-}
-
 .poster {
 	width: 150px;
 	float: left;
 	margin: 0 15px 15px 0;
-}
-
-.awards {
-	color: #888800;
-	font-size: .9em;
-	background: url("../images/laurels.png");
-	background-position: center;
-	background-size: contain;
-	background-repeat: no-repeat;
-	text-align: center;
 }
 
 .award {
@@ -296,15 +332,23 @@ section {
 	padding: 0.9em 0 0 0;
 }
 
-.menu a {
+.menu a:link {
 	color: #000000;
 	padding: 5px 10px;
 	text-decoration: none;
 }
 
+.menu a:visited {
+	color: #000000;
+}
+
 .menu a:hover { 
 	background-color: rgba(0,0,0,.2);
-	color: #888800;
+	color: #FFFFCC;
+}
+
+.menu a:active {
+	color: #FFFFCC;
 }
 
 .menu > ul {
@@ -370,11 +414,11 @@ section {
 		margin-right: auto;
 	}
 
-	.awards {
+	.movie > aside {
 		display: none;
 	}
 
-	article {
+	.movie > article {
 		border: 0;
 		padding: 2%;
 		float: left;
