@@ -14,8 +14,8 @@ body {
 	color: #000033;
 	font-family: 'Tinos', Garamond, 'Adobe Garamond Pro', Georgia, 'Times New Roman', Times, serif;
 	font-size: 16px;
-	margin-left: 8px;
-	margin-right: 8px;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -27,6 +27,7 @@ p {
 	line-height: 1.5em;
 	font-size: 1em;
 	color: #000000;
+	padding-bottom: 0.3em;
 }
 
 hr {
@@ -40,13 +41,13 @@ hr {
 h1 {
 	text-transform: uppercase;
 	font-size: 2em;
-	margin-top: .4em;
-	margin-bottom: .4em;
+	margin-top: 0.4em;
+	margin-bottom: 0.4em;
 }
 
 h2 {
-	letter-spacing: .07em;
-	margin-top: .4em;
+	letter-spacing: 0.05em;
+	margin-top: 0.4em;
 	font-size: 1.5em;
 }
 
@@ -93,40 +94,57 @@ header {
 	font-size: 1.2em;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
-	border-radius: 8px;
+	border-radius: 0.5em;
 	color: #000000;
 	background-color: rgba(255,255,255,.8);
 	border: 0;
-	padding: 5px;
-	margin: 10px 0;
+	padding: 0.3em;
+	margin: 0.6em 0;
 }
 
 header img {
-	margin: 4px 0 0 4px;
+	margin: 0.25em 0 0 0.25em;
+	height: 40px;
 }
 
 article {
 	border: 0;
 	padding: 2%;
-	float: left;
-	width: 70%;
+	width: 100%;
 }
+
+article:after {
+		visibility: hidden;
+		display: block;
+		font-size: 0;
+		content: " ";
+		clear: both;
+		height: 0;
+}
+
 
 aside {
 	border: 0;
 	padding: 2%;
-	float: right;
-	width: 30%;
+	width: 100%;
+	color: #888800;
+	font-size: 0.9em;
+	background: url("../images/laurels.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-align: center;
+	display: block;
 }
 
 footer {
 	clear: both;
-	font-size: .7em;
+	font-size: 0.7em;
 	text-align: left;
 	background: rgba(255,255,255,.8);
-	border-radius: 8px;
-	padding: 10px;
-	margin-top: 8px;
+	border-radius: 0.5em;
+	padding: 0.6em;
+	margin-top: 0.5em;
 }
 
 footer p {
@@ -140,7 +158,7 @@ footer a {
 
 section {
 	border: 0;
-	padding: 10px;
+	padding: 0.6em;
 }
 
 main > section {
@@ -150,7 +168,7 @@ main > section {
 
 main > section ul, li {
 	padding: 0;
-	margin: 6px 0 6px;
+	margin: 0.4em 0 0.4em;
 }
 
 main > section:first-child {
@@ -169,17 +187,23 @@ main > section:last-child {
 	color: #ffffff;
 }
 
-#slogan {
+#promo > h2 {
 	font-size: 1.5em;
 	text-align: center;
 	letter-spacing: 0.05em;
-
+	margin-bottom: 0.5em;
 }
+
+#promo > p {
+	color: #ffffff;
+	font-size: 1.1em;
+}
+
 
 #festivals {
 	border: 0;
 	color: #ffffff;
-	padding: 10px;
+	padding: 0.6em;
 	text-align: center;
 	background-color: rgba(255,255,255,.8);
 	background: url("../images/laurels_white.png");
@@ -207,7 +231,7 @@ main > section:last-child {
 
 #festivals ul, li {
 	padding: 0;
-	margin: 6px 0 6px;
+	margin: 0.4em 0 0.4em;
 }
 
 #festivals_left {
@@ -229,17 +253,13 @@ main > section:last-child {
 
 /* Class selectors following */
 
-.bg_info {
-	color: #ffffff;
-}
-
 .wrapper {
 	width: 90%;
 	max-width: 960px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 8px;
-	margin-bottom: 8px;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 }
 
 .clearfix:after {
@@ -253,8 +273,8 @@ main > section:last-child {
 
 .stats {
 	font-weight: bold;
-	font-size: .9em;
-	margin-top: 0px;
+	font-size: 0.9em;
+	margin-top: 0;
 }
 
 .summary {
@@ -264,41 +284,25 @@ main > section:last-child {
 
 .writeup {
 	font-weight: normal;
-	font-size: .9em;
+	font-size: 0.9em;
 }
 
 .contact {
 	text-align: center;
 	background: rgba(255,255,255,.8);
-	border-radius: 8px;
-	margin-bottom: 8px;
+	border-radius: 0.5em;
+	margin-bottom: 0.5em;
 
 }
 
 .movie {
-	margin: 10px 0;
-	padding: 5px;
+	margin: 0.6em 0;
+	padding: 0.3em;
 	border-width: 1px;
 	border-color: rgba(255,255,255,1);
 	border-style: solid;
 	background: rgba(255,255,255,.8);
-	border-radius: 8px;
-}
-
-/* Simplifying things with a few dependent-child definitions */
-
-.movie > article {
-	
-}
-
-.movie > aside {
-	color: #888800;
-	font-size: .9em;
-	background: url("../images/laurels.png");
-	background-position: center;
-	background-size: contain;
-	background-repeat: no-repeat;
-	text-align: center;
+	border-radius: 0.5em;
 }
 
 .movie:after {
@@ -313,7 +317,7 @@ main > section:last-child {
 .poster {
 	width: 150px;
 	float: left;
-	margin: 0 15px 15px 0;
+	margin: 0 1em 1em 0;
 }
 
 .award {
@@ -325,44 +329,44 @@ main > section:last-child {
 	font-style: italic;
 }
 
-.menu {
+nav {
 	float: right;
 	position: static;
 	margin: 0;
 	padding: 0.9em 0 0 0;
 }
 
-.menu a:link {
+nav a:link {
 	color: #000000;
-	padding: 5px 10px;
+	padding: 0.3em 0.6em;
 	text-decoration: none;
 }
 
-.menu a:visited {
+nav a:visited {
 	color: #000000;
 }
 
-.menu a:hover { 
+nav a:hover { 
 	background-color: rgba(0,0,0,.2);
 	color: #FFFFCC;
 }
 
-.menu a:active {
+nav a:active {
 	color: #FFFFCC;
 }
 
-.menu > ul {
+nav > ul {
 	transition: max-height 0.25s linear;
 }
 
-.menu ul {
+nav ul {
 	padding: 0;
 	margin: 0;
 	text-align: right;
 }
 
-.menu li {
-	transition: visibility .25s linear;
+nav li {
+	transition: visibility 0.25s linear;
 	display: inline-block;
 	position: relative;
 }
@@ -372,7 +376,7 @@ main > section:last-child {
 
 @media screen and (min-width: 651px) {
 
-	.menu li ul {
+	nav li ul {
 		display: none;
 		position: absolute;
 		top: 100%;
@@ -381,11 +385,11 @@ main > section:last-child {
 		right: -1px;
 	}
 
-	.menu li:hover ul {
+	nav li:hover ul {
 		display: block;
 	}
 
-	.menu li li {
+	nav li li {
 		margin: -1px 0 0 0;
 		box-sizing: border-box;
 		width: 100%;
@@ -395,10 +399,39 @@ main > section:last-child {
 
 @media screen and (min-width: 900px) {
 
-	.menu {
+	body {
+		font-size: 18px;
+	}
+
+	p {
+		line-height: 1.3em;
+
+	}
+
+	header img {
+		height: 60px;
+	}
+
+	nav {
 		font-size: 1.2em;
 		padding: 0.7em 0 0 0;
 	}
+
+	article {
+		float: left;
+		width: 70%;
+	}
+
+	aside {
+		float: right;
+		width: 30%;
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		text-align: center;
+		display: block;
+	}
+
 
 }
 
@@ -426,44 +459,50 @@ main > section:last-child {
 
 	}
 
-	.menu > ul {
+	nav > ul {
 		max-height: 0;
 		overflow: hidden;
 		margin: 1em 3.5em 0 1em;
 		background-color: rgba(150,150,150,.7);
 	}
 
-	.menu li {
+	nav li {
 		visibility: hidden;
 		display: block;
 		padding: 0.5em 0.6em;
 		border: none;
 	}
 
-	.menu a:hover {
+	nav a:hover {
 		color: #FFFF88;
 	}
 
-	.menu li ul {
+	nav li ul {
 		margin-top: 0.5em;
 		border-left: 1px solid #000;
 	}
 	
-	.menu .navbar-handle {
+	nav .navbar-handle {
 		display: block;
 	}
 
-	#navbar-checkbox:checked + .menu ul {
+	footer p {
+		float: none;
+		text-align: right;
+	}
+
+
+	#navbar-checkbox:checked + nav ul {
 		max-height: 300px;
 	}
 
-	#navbar-checkbox:checked + .menu li {
+	#navbar-checkbox:checked + nav li {
 		visibility: visible;
 	}
 
-	#navbar-checkbox:checked + .menu .navbar-handle,
-	#navbar-checkbox:checked + .menu .navbar-handle:after,
-	#navbar-checkbox:checked + .menu .navbar-handle:before {
+	#navbar-checkbox:checked + nav .navbar-handle,
+	#navbar-checkbox:checked + nav .navbar-handle:after,
+	#navbar-checkbox:checked + nav .navbar-handle:before {
 		border-color: #aaa;
 	}
 }
@@ -477,7 +516,7 @@ main > section:last-child {
 	cursor: pointer;
 	position: relative;
 	font-size: 45px;
-	padding: .5em 0;
+	padding: 0.5em 0;
 	height: 0;
 	width: 1.66666667em;
 	border-top: 0.13333333em solid;
@@ -500,14 +539,14 @@ main > section:last-child {
 	top: 0.88888889em;
 }
 
-.menu {
+nav {
 	position: relative;
 	top: -.4em;
 	left: 0;
 	right: 0;
 }
 
-.menu .navbar-handle {
+nav .navbar-handle {
 	position: absolute;
 	font-size: 1.2em;
 	top: 0.7em;
@@ -515,3 +554,14 @@ main > section:last-child {
 	z-index: 10;
 }
 
+@media screen and (max-width: 370px) {
+
+	header img {
+		margin: 0.3em 0 0.2em 0.25em;
+		height: 30px;
+	}
+
+	header {
+		font-size: 1em;
+	}
+}
