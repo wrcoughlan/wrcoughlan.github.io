@@ -318,6 +318,53 @@ main > section:last-child {
 	width: 150px;
 	float: left;
 	margin: 0 1em 1em 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.poster a {
+	color: rgba(0,0,0,1);
+}
+
+.poster:hover > h3 {
+	opacity: 1;
+	top: 25px;
+
+}
+
+.poster h3 {
+	font-size: 1.5em;
+	width: 100%;
+	position: absolute;
+	padding: 20px;
+	top: -20px;
+	left: 50%;
+	-webkit-transform:translateX(-50%);
+	-moz-transform:translateX(-50%);
+	-o-transform:translateX(-50%);
+	transform:translateX(-50%);
+	-webkit-transition:opacity ease-in-out .5s;
+	-moz-transition:opacity ease-in-out .5s;
+	-o-transition:opacity ease-in-out .5s;
+	transition:opacity ease-in-out .5s;
+	-webkit-transition:top ease-out .5s;
+	-moz-transition:top ease-out .5s;
+	-o-transition:top ease-out .5s;
+	transition:top ease-out .5s;
+	opacity: 0;
+}
+
+.poster:hover img {
+	opacity: .3;
+
+}
+
+.poster img {
+	-webkit-transition:opacity ease-in-out .5s;
+	-moz-transition:opacity ease-in-out .5s;
+	-o-transition:opacity ease-in-out .5s;
+	transition:opacity ease-in-out .5s;
+	opacity: 1;
 }
 
 .award {
@@ -348,7 +395,12 @@ nav a:visited {
 
 nav a:hover { 
 	background-color: rgba(0,0,0,.2);
+	border-radius: 0.25em;
 	color: #FFFFCC;
+	-webkit-transition:background-color ease-in-out .5s;
+	-moz-transition:background-color ease-in-out .5s;
+	-o-transition:background-color ease-in-out .5s;
+	transition:background-color ease-in-out .5s;
 }
 
 nav a:active {
@@ -464,7 +516,8 @@ nav li {
 		overflow: hidden;
 		margin: 1em 3.5em 0 1em;
 		background-color: rgba(150,150,150,.7);
-	}
+		border-radius: 0.25em;
+}
 
 	nav li {
 		visibility: hidden;
