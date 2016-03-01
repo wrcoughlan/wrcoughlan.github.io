@@ -7,10 +7,7 @@
 }
 
 body {
-	background-color: #000;
-	background: url("../images/page_background.jpg");
-	background-size: contain;
-	background-attachment: fixed;
+	background-color: #fff;
 	color: #000033;
 	font-family: 'Tinos', Garamond, 'Adobe Garamond Pro', Georgia, 'Times New Roman', Times, serif;
 	font-size: 16px;
@@ -64,7 +61,7 @@ li {
 	margin-bottom: 1em;
 }
 
-a:link {
+a {
 	text-decoration: none;
 	color: #888800;
 }
@@ -75,11 +72,6 @@ a:visited {
 }
 
 a:hover {
-	text-decoration: none;
-	color: #AAAA22;
-}
-
-a:active {
 	text-decoration: none;
 	color: #AAAA22;
 }
@@ -114,12 +106,12 @@ article {
 }
 
 article:after {
-		visibility: hidden;
-		display: block;
-		font-size: 0;
-		content: " ";
-		clear: both;
-		height: 0;
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
 }
 
 
@@ -185,6 +177,12 @@ main > section:last-child {
 #promo {
 	text-align: center;
 	color: #ffffff;
+	width: 100%;
+	padding: 4em 2em;
+	background: url("../images/page_background.jpg");
+	background-size: contain;
+	background-attachment: fixed;
+
 }
 
 #promo > h2 {
@@ -213,19 +211,15 @@ main > section:last-child {
 
 }
 
-#festivals a:link {
-	color: #FFFFCC;
+#festivals a {
+	color: #000033;
 }
 
 #festivals a:visited {
-	color: #FFFFCC;
+	color: #000033;
 }
 
 #festivals a:hover {
-	color: #aaaa66;
-}
-
-#festivals a:active {
 	color: #aaaa66;
 }
 
@@ -255,7 +249,7 @@ main > section:last-child {
 
 .wrapper {
 	width: 90%;
-	max-width: 960px;
+	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 0.5em;
@@ -297,12 +291,11 @@ main > section:last-child {
 
 .movie {
 	margin: 0.6em 0;
-	padding: 0.3em;
+	padding: 1em 2em;
 	border-width: 1px;
-	border-color: rgba(255,255,255,1);
+	border-color: rgba(0,0,0,.5);
 	border-style: solid;
-	background: rgba(255,255,255,.8);
-	border-radius: 0.5em;
+	background: rgba(0,0,0,.1);
 }
 
 .movie:after {
@@ -383,10 +376,14 @@ nav {
 	padding: 0.9em 0 0 0;
 }
 
-nav a:link {
+nav a {
 	color: #000000;
+	background-color: rgba(0,0,0,0);
+	border-radius: 0.25em;
 	padding: 0.3em 0.6em;
 	text-decoration: none;
+	transition:color ease-in-out .25s;
+	transition:background-color ease-in-out .25s;
 }
 
 nav a:visited {
@@ -395,15 +392,6 @@ nav a:visited {
 
 nav a:hover { 
 	background-color: rgba(0,0,0,.2);
-	border-radius: 0.25em;
-	color: #FFFFCC;
-	-webkit-transition:background-color ease-in-out .5s;
-	-moz-transition:background-color ease-in-out .5s;
-	-o-transition:background-color ease-in-out .5s;
-	transition:background-color ease-in-out .5s;
-}
-
-nav a:active {
 	color: #FFFFCC;
 }
 
@@ -483,6 +471,11 @@ nav li {
 		text-align: center;
 		display: block;
 	}
+
+	#promo {
+		padding: 10em 5em;
+	}
+
 
 
 }
